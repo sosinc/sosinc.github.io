@@ -1,4 +1,4 @@
-baseURL       = "http://sosinc.io"
+baseURL       = "https://sosinc.io"
 languageCode  = "en-us"
 title         = "SoS | AI, ML, and Web Development studio"
 theme         = "roxo"
