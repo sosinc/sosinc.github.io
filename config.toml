@@ -76,9 +76,9 @@ summarylength = 25
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "+91 7696166158"
-      email   = "ckhabra@gmail.com"
+      address = "329 Phase 8B<br>Mohali, Punjab, India"
+      phone   = "+91 7888502650"
+      email   = "jkhabra09@gmail.com"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
