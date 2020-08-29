@@ -67,7 +67,6 @@ Keeping this in mind, we came up with this react-hook:
       options: Options = {},
     ) => {
       const [isFetching, setIsFetching] = useState<boolean>(false);
-      const [flash] = useFlash();
       const dispatch = useDispatch();
 
       const runAsyncThunk = useCallback(async (args?: any) => {
