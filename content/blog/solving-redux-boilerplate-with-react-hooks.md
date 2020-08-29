@@ -7,11 +7,11 @@ image: "/images/blog/quick-sand-of-redux-1280.png"
 author: Charanjit Singh
 ---
 
-With rise of GraphQL, we often have to work with React Apollo. I personally
-don't like apollo for reasons I'll refrain from discussing in this post. But I
+With rise of GraphQL, I often have to work with React Apollo. I personally don't
+like apollo for reasons I'll refrain from discussing in this post. But I
 absolutely loved its `useQuery` and `useMutation` react-hooks.
 
-When building [SoS App](https://github.com/sosinc/sos-app/), we chose Redux for state management because:
+When building [SoS App](https://github.com/sosinc/sos-app/), I chose Redux for state management because:
 
 1.  It gives a greater degree of control and predictability over global state
 2.  Its [debugging tools](https://addons.mozilla.org/en-US/firefox/addon/reduxdevtools/) are very helpful
@@ -29,9 +29,10 @@ Internet is full of different approaches to solve this.
 
 ### @redux/toolkit
 
-[@redux/toolkit](https://redux-starter-kit.js.org/) provides utilities to fight off the boilerplate monster. We make
-extensive use of many of them. But I wanted more. A friction-free way to perform
-async actions, with as few as possible compromises with Redux principles.
+[@redux/toolkit](https://redux-starter-kit.js.org/) provides utilities to fight
+off the boilerplate monster. It's brilliant, i make extensive use of many of
+them, but I wanted more. A friction-free way to perform async actions, with as
+few as possible compromises with Redux principles.
 
 
 ### Custom react hooks
@@ -40,7 +41,7 @@ React hooks provide a great way of creating modular abstractions which can be
 beautifully composed together. They give me the warm fuzzy feeling of using
 Haskell Type Classes.
 
-We chose to create our own version of `useQuery`, that
+I chose to create our own version of `useQuery`, that
 
 1.  interoperates with @redux/toolkit's [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk)
 2.  optimized ease of use with minimal compromises of redux principles
@@ -48,17 +49,17 @@ We chose to create our own version of `useQuery`, that
 
 ### A Compromise with "The Redux Way"&reg;
 
-We chose to keep state of async operation (i.e loading, success, and failure)
-locally inside the component. Reason being that most of the times, we don't care
+I chose to keep state of async operation (i.e loading, success, and failure)
+locally inside the component. Reason being that most of the times, I don't care
 about the lifecycle of async operation globally, just the results.
 
-e.g when fetching list of employees, this is how we want to handle its state transitions:
+e.g when fetching list of employees, this is how I want to handle its state transitions:
 
 1.  `Loading`: show the skeleton in `EmployeesList`
 2.  `Error`: show error notification
 3.  `Success`: store the employees in global state; and show success notification
 
-Keeping this in mind, we came up with this react-hook:
+Keeping this in mind, I came up with this react-hook:
 
 ```typescript
 
@@ -97,7 +98,7 @@ Ergonomic much!? While we are doing this, Redux is still getting all the right
 actions. [createEmployeeAction](https://github.com/sosinc/sos-app/blob/c326ef651e1f5653a1e9bc279d550dadd2f5aa20/ui/src/duck/employees.ts#L35) here is just a simple [async-thunk](https://redux-starter-kit.js.org/api/createAsyncThunk) wrapping a [plain
 TS function](https://github.com/sosinc/sos-app/blob/c326ef651e1f5653a1e9bc279d550dadd2f5aa20/ui/src/entities/Employee.ts#L27) which hits an API.
 
-Incidentally, in SoS App we communicate status of async operations with toast
+Incidentally, in [SoS App](https://github.com/sosinc/sos-app/) we communicate status of async operations with toast
 notifications. That meant we can get rid of even more boilerplate. With some
 [small modifications](https://github.com/sosinc/sos-app/blob/c326ef651e1f5653a1e9bc279d550dadd2f5aa20/ui/src/lib/asyncHooks.ts#L17), we were able to make calls like this:
 
@@ -121,7 +122,7 @@ and using this hook we could go "just do it" with the async operation, and user
 feedback was handled for free.
 
 I am pretty okay with this compromise and gains we had from it. But I still feel
-the Redux way is bloated. Redux focuses too much on puritanism which don't
+the Redux way is a lot of work. Redux focuses too much on puritanism which don't
 really pay off. Until we find a better way, I hope this little tid-bit might of
 use for someone else too!
 
