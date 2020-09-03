@@ -76,9 +76,9 @@ summarylength = 25
     # Footer Contact Info
     [params.footer.contactInfo]
       title   = "Contact Info"
-      address = "329 Phase 8B<br>Mohali, Punjab, India"
+      address = "3017 Sector 23 D<br>Chandigarh, India"
       phone   = "+91 7888502650"
-      email   = "jkhabra09@gmail.com"
+      email   = "contact@sosinc.io"
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
