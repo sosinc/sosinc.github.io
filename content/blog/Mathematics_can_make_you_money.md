@@ -1,5 +1,5 @@
 ---
-title       : "Mathematics can Make you Money"
+title       : " Rediscovering math: How to win a game of shells"
 date        : 2020-09-04T10:00:01+05:30
 description : "How we can use mathematics to make more money and make logical decisions"
 feature_image: "/images/blog/mathematics/pi-1453836_960_720.webp"
