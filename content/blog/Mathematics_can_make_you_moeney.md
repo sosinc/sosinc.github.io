@@ -1,7 +1,7 @@
 ---
 title       : "Mathematics can Make you Money"
-date        : 2020-09-04T20:17:01+05:30
-description : "How mathematics can help in solving real world challenges based on logic rather than instinct"
+date        : 2020-09-04T10:00:01+05:30
+description : "Creating a custom react-hook to ergonomically perform asnychronous operations in a React app without having to deal with tons of Redux boilderplate"
 feature_image: "/images/blog/mathematics/pi-1453836_960_720.webp"
 image: "/images/blog/mathematics/pi-1453836_960_720.webp"
 author: Inderjit Singh Chahal
@@ -39,8 +39,8 @@ In order to get a good hands-on, the possible outcomes let us create a simulatio
 2. Total amount lost
 3. Net Profit or Loss
 
-[![Simulation](/images/blog/mathematics/ezgif.com-gif-maker.gif)]
-
+![Simulation](/images/blog/mathematics/ezgif.com-gif-maker.gif)
+You can access the code that created these simulations [here](https://github.com/sosinc/blogs/tree/master/blog_1)
 
 ### So what can we do ??
 
@@ -66,4 +66,46 @@ Therefore owing to our doubling strategy in case we lose the next amount is 2, t
 Essentially 
 
 
-1, 2, 4, 8, 16, 32 ….. [![small](images/blog/mathematics/img-d889f588bcc05fc7.jpg)]
+1, 2, 4, 8, 16, 32 ….. [![small](/images/blog/mathematics/img-d889f588bcc05fc7.jpg)]
+
+Where n is the number of games that we won. Now doesn’t this looks like something we all know and have read about in the past?
+Remember GP(Geometric progressions?), well we have at our hand a geometric progression. 
+
+With 1 being the first term and 2 being the common ratio and [![small](/images/blog/mathematics/img-d889f588bcc05fc7.jpg)] being the last term that we have won.
+
+Since the progression is a GP we can easily quantify the losses we are going to make, by definition we know that we are losing money until the term  (n - 1) or .
+
+
+**From the definition, we also know that sum of a GP with n terms is**  
+
+![Formula](/images/blog/mathematics/img-6100426fa6641112.jpg)
+
+Where **a** is the first term **r** is the common ratio, in our case we have been losing money until **(n-1)th** term 
+
+**a** = 1 
+**r** = 2
+
+The equation effectively reduces to for n-1 terms as
+
+![Formula](/images/blog/mathematics/img-c33e7198a263a3d0.jpg)
+
+
+**Now we also know that nth term (last term that is going to make us money)**
+
+![Formula](/images/blog/mathematics/img-c7155396a9c3f6b5.jpg)
+
+Putting in values for **a** and **r**
+
+![Formula](/images/blog/mathematics/img-86d96abee73bd649.jpg)
+
+
+**Net value = Profit-from-last-term - sum(all-previous-losses)**
+
+![Formula](/images/blog/mathematics/img-b21745f4dd4513d2.jpg)  
+![Formula](/images/blog/mathematics/img-350cd61cd43acd43.jpg)  
+![Formula](/images/blog/mathematics/img-7a098e49b7f911e4.jpg)  
+
+**An interesting observation in this is that the final value is independent of n, meaning no matter how many games we lose money for the final outcome will always be profitable.**
+
+
+Now mathematics is not cramming formulas to be able to solve some quant questions, it’s about solving real-life problems in a logical and comprehensive manner. Stay tuned for more interesting implementations like these.
