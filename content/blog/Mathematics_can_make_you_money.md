@@ -42,7 +42,7 @@ In order to get a good hands-on, the possible outcomes let us create a simulatio
 ![Simulation](/images/blog/mathematics/ezgif.com-gif-maker.gif)
 You can access the code that created these simulations [here](https://github.com/sosinc/blogs/tree/master/blog_1)
 
-### So what can we do ??
+### So what can we do ?
 
 Well maths to the rescue, what if I tell you that you can always ensure you walk away with a profit from this game?. Crazy right??. Not so much.
 
