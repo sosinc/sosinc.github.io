@@ -1,7 +1,7 @@
 ---
 title       : "My recent bout with React/Redux boilerplate"
 date        : 2020-08-29T20:17:01+05:30
-description : "How we can use mathematics to make more money and make logical decisions"
+description : "Creating a custom react-hook to ergonomically perform asnychronous operations in a React app without having to deal with tons of Redux boilderplate"
 feature_image: "/images/blog/quick-sand-of-redux-1280.png"
 image: "/images/blog/quick-sand-of-redux-1280.png"
 author: Charanjit Singh

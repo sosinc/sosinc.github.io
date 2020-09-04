@@ -1,7 +1,7 @@
 ---
 title       : "Mathematics can Make you Money"
 date        : 2020-09-04T10:00:01+05:30
-description : "Creating a custom react-hook to ergonomically perform asnychronous operations in a React app without having to deal with tons of Redux boilderplate"
+description : "How we can use mathematics to make more money and make logical decisions"
 feature_image: "/images/blog/mathematics/pi-1453836_960_720.webp"
 image: "/images/blog/mathematics/pi-1453836_960_720.webp"
 author: Inderjit Singh Chahal
