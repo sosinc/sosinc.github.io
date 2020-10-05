@@ -5,6 +5,7 @@ description : "Creating a custom react-hook to ergonomically perform asnychronou
 feature_image: "/images/blog/quick-sand-of-redux-1280.png"
 image: "/images/blog/quick-sand-of-redux-1280.png"
 author: Charanjit Singh
+tags: Javascript React
 ---
 
 With rise of GraphQL, I often have to work with React Apollo. I personally don't
