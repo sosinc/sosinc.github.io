@@ -4,6 +4,12 @@ title         = "SoS | AI, ML, and Web Development studio"
 theme         = "roxo"
 summarylength = 25
 
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # Site Menus
 [menu]
   # Navbar Menus
