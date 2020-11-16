@@ -54,4 +54,7 @@
     </div>
   </div>
 </section>
+
+{{ $formhandler := resources.Get "js/formhandler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script>
 {{ end }}
